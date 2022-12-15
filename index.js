@@ -49,7 +49,7 @@ app.post("/searching", async (req, res) => {
 
 app.post("/testsearching", async (req, res) => {
   console.log("Checking imgix status in /testsearch");
-  let arrSearchImgix = [];
+  let arrSearchImgix = process.env.IMGIX_API;
   let sentFromFrontend = req.body.sendToBackend;
 
   var config = {
