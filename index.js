@@ -25,9 +25,7 @@ app.post("/searching", async (req, res) => {
 
   var config = {
     method: "get",
-    url:
-      "https://api.imgix.com/api/v1/assets/622f76522d67dbae5fb46268?filter[tags]=" +
-      sentFromFrontend,
+    url: "https://api.imgix.com/api/v1/assets/622f76522d67dbae5fb46268?filter[tags]=cup",
     headers: {
       Authorization: "Bearer " + process.env.IMGIX_API,
       "Content-Type": "application/vnd.api+json",
