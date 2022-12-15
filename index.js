@@ -1,8 +1,8 @@
 const express = require("express");
-const app = express();
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const axios = require("axios");
+const app = express();
 require("dotenv").config();
 const port = 5001;
 app.use(express.json());
@@ -49,7 +49,7 @@ app.post("/searching", async (req, res) => {
 
 app.post("/testsearching", async (req, res) => {
   console.log("Checking imgix status in /testsearch");
-  let arrSearchImgix = process.env.IMGIX_API;
+  let arrSearchImgix = [];
   let sentFromFrontend = req.body.sendToBackend;
 
   var config = {
