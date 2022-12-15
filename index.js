@@ -46,7 +46,7 @@ app.post("/searching", async (req, res) => {
 
   return res.status(200).send(arrSearchImgix);
 });
-
+//
 app.post("/testsearching", async (req, res) => {
   console.log("Checking imgix status in /testsearch");
   let arrSearchImgix = [];
