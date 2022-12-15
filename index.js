@@ -20,7 +20,7 @@ app.get("/test", (req, res) => {
 
 app.post("/searching", async (req, res) => {
   console.log("Checking imgix status in /testsearch");
-  let arrSearchImgix = [];
+  let arrSearchImgix = ["test"];
   let sentFromFrontend = req.body.sendToBackend;
 
   var config = {
