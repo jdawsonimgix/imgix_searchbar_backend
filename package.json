@@ -1,0 +1,27 @@
+{
+  "name": "imgix_searchbar_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdawsonimgix/imgix_searchbar_backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdawsonimgix/imgix_searchbar_backend/issues"
+  },
+  "homepage": "https://github.com/jdawsonimgix/imgix_searchbar_backend#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
